@@ -4,11 +4,15 @@ Chinese number &lt;-> Arabic number conversion
 
 ## Constants
 
+`COUNTING_TYPES = ['low', 'mid', 'high']`: Chinese number couting type.
+  
+  `low` : `'兆'` = `'亿'` * 10 = $10^{9}$, `'京'` is $10^{10}$, etc.
+  
+  `mid` : `'兆'` = `'亿'` * `'万'` = $10^{12}$, `'京'` is $10^{16}$, etc.
+  
+  `high` : `'兆'` = `'亿'` * `'亿'` = $10^{16}$, `'京'` is $10^{32}$, etc.
+
 ```python
-
-COUNTING_TYPES = ['low', 'mid', 'high']
-# couting type
-
 number = '零一二三四五六七八九'
 # 0-9
 
