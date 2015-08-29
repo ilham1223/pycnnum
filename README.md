@@ -60,11 +60,11 @@ cn2num(chinese_string, counting_type = COUNTING_TYPES[1])
   
   `counting_type` : Chinese number couting type.
   
-    `low` : `'兆'` is $10^9$, `'京'` is $10^{10}$, etc.
+    `low` : `'兆'` = `'亿'` * 10 = $10^{9}$, `'京'` is $10^{10}$, etc.
     
-    `mid` : `'兆'` is $10^12$, `'京'` is $10^{16}$, etc.
+    `mid` : `'兆'` = `'亿'` * `'万'` = $10^{12}$, `'京'` is $10^{16}$, etc.
     
-    `high` : `'兆'` is $10^16$, `'京'` is $10^{32}$, etc.
+    `high` : `'兆'` = `'亿'` * `'亿'` = $10^{16}$, `'京'` is $10^{32}$, etc.
 
 ```python
 num2cn(num, counting_type = COUNTING_TYPES[1],
@@ -75,11 +75,11 @@ num2cn(num, counting_type = COUNTING_TYPES[1],
   `num` : int or float number, e.g. `10`, `-1.5`
   `counting_type` : Chinese number couting type.
   
-    `low` : `'兆'` is $10^9$, `'京'` is $10^{10}$, etc.
+    `low` : `'兆'` = `'亿'` * 10 = $10^{9}$, `'京'` is $10^{10}$, etc.
     
-    `mid` : `'兆'` is $10^12$, `'京'` is $10^{16}$, etc.
+    `mid` : `'兆'` = `'亿'` * `'万'` = $10^{12}$, `'京'` is $10^{16}$, etc.
     
-    `high` : `'兆'` is $10^16$, `'京'` is $10^{32}$, etc.
+    `high` : `'兆'` = `'亿'` * `'亿'` = $10^{16}$, `'京'` is $10^{32}$, etc.
 
   `big` : set to True to get capital Chinese numbers
   
